@@ -90,18 +90,16 @@
         }
         
         .track-order-popup-button {
-            background: #3273AB !important;
-            backdrop-filter: blur(20px) !important;
-            -webkit-backdrop-filter: blur(20px) !important;
+            background: linear-gradient(45deg, #3273AB, #4A90E2) !important;
             color: white !important;
-            border: 2px solid #3273AB !important;
+            border: none !important;
             padding: 14px 30px !important;
             font-size: 1rem !important;
             font-weight: 700 !important;
-            border-radius: 15px !important;
+            border-radius: 50px !important;
             cursor: pointer;
             transition: all 0.3s ease;
-            box-shadow: 0 10px 40px rgba(50, 115, 171, 0.6), inset 0 2px 0 rgba(255, 255, 255, 0.3) !important;
+            box-shadow: 0 4px 15px rgba(50, 115, 171, 0.4) !important;
             animation: popupButtonPulse 2s ease-in-out infinite !important;
             font-family: 'Orbitron', 'Roboto', sans-serif !important;
             letter-spacing: 0.6px !important;
@@ -112,25 +110,24 @@
         }
         
         .track-order-popup-button:hover {
-            background: #2a5f8f !important;
-            border: 2px solid #2a5f8f !important;
+            background: linear-gradient(45deg, #2a5f8f, #3d7bc6) !important;
             transform: translateY(-2px) !important;
-            box-shadow: 0 15px 50px rgba(42, 95, 143, 0.8), inset 0 2px 0 rgba(255, 255, 255, 0.4) !important;
+            box-shadow: 0 6px 20px rgba(50, 115, 171, 0.6) !important;
             animation-play-state: paused !important;
         }
         
         @keyframes popupButtonPulse {
             0% {
                 transform: scale(1) !important;
-                box-shadow: 0 10px 40px rgba(50, 115, 171, 0.6), inset 0 2px 0 rgba(255, 255, 255, 0.3) !important;
+                box-shadow: 0 4px 15px rgba(50, 115, 171, 0.4) !important;
             }
             50% {
                 transform: scale(1.05) !important;
-                box-shadow: 0 15px 50px rgba(50, 115, 171, 0.9), inset 0 2px 0 rgba(255, 255, 255, 0.4) !important;
+                box-shadow: 0 6px 25px rgba(50, 115, 171, 0.7) !important;
             }
             100% {
                 transform: scale(1) !important;
-                box-shadow: 0 10px 40px rgba(50, 115, 171, 0.6), inset 0 2px 0 rgba(255, 255, 255, 0.3) !important;
+                box-shadow: 0 4px 15px rgba(50, 115, 171, 0.4) !important;
             }
         }
             border: none;
