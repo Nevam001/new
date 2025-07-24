@@ -401,25 +401,44 @@ body {
 }
 
 .track-button {
-    background: linear-gradient(45deg, #ff6b35, #f7931e);
-    color: white;
+    background: linear-gradient(180deg, #1e4a6b, #2c5f8a, #1e4a6b) !important;
+    color: white !important;
     border: none;
     padding: 15px 40px;
     font-size: 1.1rem;
     font-weight: 600;
-    border-radius: 50px;
+    border-radius: 8px !important;
     cursor: pointer;
     transition: all 0.3s ease;
-    box-shadow: 0 4px 15px rgba(255, 107, 53, 0.4);
+    box-shadow: 0 4px 15px rgba(30, 74, 107, 0.5) !important;
+    animation: trackButtonPulse 1.5s ease-in-out infinite !important;
     width: 100%;
     font-family: 'Orbitron', sans-serif;
     font-weight: 700;
-    letter-spacing: 0.5px;
+    letter-spacing: 0.6px !important;
+    text-transform: uppercase !important;
 }
 
 .track-button:hover:not(:disabled) {
-    transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(255, 107, 53, 0.6);
+    background: linear-gradient(180deg, #152e3f, #1e4a6b, #152e3f) !important;
+    transform: translateY(-2px) !important;
+    box-shadow: 0 6px 20px rgba(30, 74, 107, 0.7) !important;
+    animation-play-state: running !important;
+}
+
+@keyframes trackButtonPulse {
+    0% {
+        transform: scale(1) !important;
+        box-shadow: 0 4px 15px rgba(30, 74, 107, 0.5) !important;
+    }
+    50% {
+        transform: scale(1.08) !important;
+        box-shadow: 0 8px 30px rgba(30, 74, 107, 0.9) !important;
+    }
+    100% {
+        transform: scale(1) !important;
+        box-shadow: 0 4px 15px rgba(30, 74, 107, 0.5) !important;
+    }
 }
 
 .track-button:disabled {
