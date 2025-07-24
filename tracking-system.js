@@ -85,13 +85,9 @@ import { Navigation } from './src/components/navigation.js';
         window.addEventListener('scroll', function() {
             const header = document.querySelector('.header');
             if (header) {
-                if (window.scrollY > 100) {
-                    header.style.backgroundColor = 'rgba(255, 255, 255, 0.95)';
-                    header.style.backdropFilter = 'blur(10px)';
-                } else {
-                    header.style.backgroundColor = '#fff';
-                    header.style.backdropFilter = 'none';
-                }
+                // Manter efeito de vidro consistente
+                header.style.backgroundColor = 'rgba(255, 255, 255, 0.1)';
+                header.style.backdropFilter = 'blur(10px)';
             }
         });
     }
