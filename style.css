@@ -269,7 +269,7 @@ body {
     border: 2px solid rgba(37, 84, 122, 0.6) !important;
     transform: translateY(-2px) !important;
     box-shadow: 0 15px 50px rgba(37, 84, 122, 0.6), inset 0 2px 0 rgba(255, 255, 255, 0.4) !important;
-    animation-play-state: running !important;
+    animation-play-state: paused !important;
 }
 
 @keyframes lightPulse {
@@ -278,8 +278,8 @@ body {
         box-shadow: 0 10px 40px rgba(37, 84, 122, 0.4), inset 0 2px 0 rgba(255, 255, 255, 0.3) !important;
     }
     50% {
-        transform: scale(1.08) !important;
-        box-shadow: 0 15px 50px rgba(37, 84, 122, 0.8), inset 0 2px 0 rgba(255, 255, 255, 0.5) !important;
+        transform: scale(1.03) !important;
+        box-shadow: 0 12px 45px rgba(37, 84, 122, 0.6), inset 0 2px 0 rgba(255, 255, 255, 0.4) !important;
     }
     100% {
         transform: scale(1) !important;
