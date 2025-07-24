@@ -90,19 +90,19 @@
         }
         
         .track-order-popup-button {
-            background: rgba(37, 84, 122, 0.25) !important;
+            background: rgba(37, 84, 122, 0.45) !important;
             backdrop-filter: blur(20px) !important;
             -webkit-backdrop-filter: blur(20px) !important;
             color: white !important;
-            border: 2px solid rgba(37, 84, 122, 0.5) !important;
+            border: 2px solid rgba(37, 84, 122, 0.7) !important;
             padding: 14px 30px !important;
             font-size: 1rem !important;
             font-weight: 700 !important;
             border-radius: 15px !important;
             cursor: pointer;
             transition: all 0.3s ease;
-            box-shadow: 0 10px 40px rgba(37, 84, 122, 0.4), inset 0 2px 0 rgba(255, 255, 255, 0.3) !important;
-            animation: lightPulse 2.5s ease-in-out infinite !important;
+            box-shadow: 0 10px 40px rgba(37, 84, 122, 0.6), inset 0 2px 0 rgba(255, 255, 255, 0.3) !important;
+            animation: popupButtonPulse 2s ease-in-out infinite !important;
             font-family: 'Orbitron', 'Roboto', sans-serif !important;
             letter-spacing: 0.6px !important;
             text-transform: uppercase !important;
@@ -112,25 +112,25 @@
         }
         
         .track-order-popup-button:hover {
-            background: rgba(37, 84, 122, 0.35) !important;
-            border: 2px solid rgba(37, 84, 122, 0.6) !important;
+            background: rgba(37, 84, 122, 0.55) !important;
+            border: 2px solid rgba(37, 84, 122, 0.8) !important;
             transform: translateY(-2px) !important;
-            box-shadow: 0 15px 50px rgba(37, 84, 122, 0.6), inset 0 2px 0 rgba(255, 255, 255, 0.4) !important;
+            box-shadow: 0 15px 50px rgba(37, 84, 122, 0.8), inset 0 2px 0 rgba(255, 255, 255, 0.4) !important;
             animation-play-state: paused !important;
         }
         
-        @keyframes lightPulse {
+        @keyframes popupButtonPulse {
             0% {
                 transform: scale(1) !important;
-                box-shadow: 0 10px 40px rgba(37, 84, 122, 0.4), inset 0 2px 0 rgba(255, 255, 255, 0.3) !important;
+                box-shadow: 0 10px 40px rgba(37, 84, 122, 0.6), inset 0 2px 0 rgba(255, 255, 255, 0.3) !important;
             }
             50% {
-                transform: scale(1.03) !important;
-                box-shadow: 0 12px 45px rgba(37, 84, 122, 0.6), inset 0 2px 0 rgba(255, 255, 255, 0.4) !important;
+                transform: scale(1.05) !important;
+                box-shadow: 0 15px 50px rgba(37, 84, 122, 0.9), inset 0 2px 0 rgba(255, 255, 255, 0.4) !important;
             }
             100% {
                 transform: scale(1) !important;
-                box-shadow: 0 10px 40px rgba(37, 84, 122, 0.4), inset 0 2px 0 rgba(255, 255, 255, 0.3) !important;
+                box-shadow: 0 10px 40px rgba(37, 84, 122, 0.6), inset 0 2px 0 rgba(255, 255, 255, 0.3) !important;
             }
         }
             border: none;
