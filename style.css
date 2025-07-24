@@ -162,12 +162,13 @@ body {
 }
 
 .logo-image {
-    height: calc(100% - 10px);
-    max-height: 120px;
+    height: 100%;
+    max-height: none;
     width: auto;
     display: block;
     filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.3));
     transition: all 0.3s ease;
+    object-fit: contain;
 }
 
 .logo-image:hover {
