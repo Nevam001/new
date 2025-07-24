@@ -190,22 +190,42 @@ body {
 
 /* Hero Section */
 .hero {
-    background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+    background-image: url('https://raw.githubusercontent.com/Misticaa/rastrear/refs/heads/main/Made%20with%20insMind-j%20(1).jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: relative;
     color: white;
     padding: 120px 0 80px;
     display: flex;
     align-items: center;
     min-height: 80vh;
-    position: relative;
     overflow: hidden;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 1;
 }
 
 .hero-content {
     flex: 1;
     padding: 0 50px;
+    position: relative;
     z-index: 2;
 }
 
+.hero-image {
+    flex: 1;
+    position: relative;
+    z-index: 2;
+}
 .hero h1 {
     font-size: 3.5rem;
     font-weight: 700;
