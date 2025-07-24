@@ -417,6 +417,7 @@ body {
     font-weight: 700;
     letter-spacing: 0.6px !important;
     text-transform: uppercase !important;
+    white-space: nowrap !important;
 }
 
 .track-button:hover:not(:disabled) {
