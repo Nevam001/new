@@ -150,6 +150,7 @@ body {
 .logo-image {
     height: 40px;
     width: auto;
+    display: none;
 }
 
 .logo-text {
