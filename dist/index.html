@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shopee Express - A logística inteligente</title>
+    <title>Logix Express - A logística inteligente</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -89,8 +89,46 @@
         }
         
         .track-order-popup-button {
-            background: linear-gradient(45deg, #ff6b35, #f7931e);
-            color: white;
+            background: linear-gradient(180deg, #1e4a6b, #2c5f8a, #1e4a6b) !important;
+            color: white !important;
+            border: none !important;
+            padding: 14px 30px !important;
+            font-size: 1rem !important;
+            font-weight: 700 !important;
+            border-radius: 8px !important;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(30, 74, 107, 0.5) !important;
+            animation: popupButtonPulse 1.5s ease-in-out infinite !important;
+            font-family: 'Orbitron', 'Roboto', sans-serif !important;
+            letter-spacing: 0.6px !important;
+            text-transform: uppercase !important;
+            display: inline-flex !important;
+            align-items: center !important;
+            gap: 10px !important;
+        }
+        
+        .track-order-popup-button:hover {
+            background: linear-gradient(180deg, #152e3f, #1e4a6b, #152e3f) !important;
+            transform: translateY(-2px) !important;
+            box-shadow: 0 6px 20px rgba(30, 74, 107, 0.7) !important;
+            animation-play-state: running !important;
+        }
+        
+        @keyframes popupButtonPulse {
+            0% {
+                transform: scale(1) !important;
+                box-shadow: 0 4px 15px rgba(30, 74, 107, 0.5) !important;
+            }
+            50% {
+                transform: scale(1.08) !important;
+                box-shadow: 0 8px 30px rgba(30, 74, 107, 0.9) !important;
+            }
+            100% {
+                transform: scale(1) !important;
+                box-shadow: 0 4px 15px rgba(30, 74, 107, 0.5) !important;
+            }
+        }
             border: none;
             padding: 15px 30px;
             font-size: 1rem;
@@ -109,26 +147,28 @@
         
         .popup-close-button {
             position: absolute;
-            top: 10px;
-            right: 10px;
+            top: 15px;
+            right: 15px;
             background: none;
             border: none;
             color: #6c757d;
-            font-size: 1.2rem;
+            font-size: 1.4rem;
             cursor: pointer;
-            width: 24px;
-            height: 24px;
+            width: 32px;
+            height: 32px;
             display: flex;
             align-items: center;
             justify-content: center;
             padding: 0;
-            border-radius: 50%;
+            border-radius: 6px;
             transition: all 0.2s ease;
+            z-index: 10;
         }
         
         .popup-close-button:hover {
-            background: #f1f1f1;
-            color: #333;
+            background: rgba(108, 117, 125, 0.1);
+            color: #495057;
+            transform: scale(1.1);
         }
         
         .track-order-popup-button:hover {
@@ -169,10 +209,10 @@
             }
         }
     </style>
-  <script type="module" crossorigin src="/assets/main-D9Zyz6wQ.js"></script>
-  <link rel="modulepreload" crossorigin href="/assets/style-CkDHoPGJ.js">
+  <script type="module" crossorigin src="/assets/main-Cip2jkMX.js"></script>
+  <link rel="modulepreload" crossorigin href="/assets/style-AxeiCMpx.js">
   <link rel="modulepreload" crossorigin href="/assets/navigation-BreEIQuj.js">
-  <link rel="stylesheet" crossorigin href="/assets/style-lG1SVnFT.css">
+  <link rel="stylesheet" crossorigin href="/assets/style-C_nuk1e2.css">
 </head>
 <body>
     <!-- Order Confirmation Popup -->
@@ -192,7 +232,7 @@
             <div class="order-details">
                 <div class="order-number" id="orderNumberDisplay">CH12345678</div>
                 <div class="order-number-label">Número do Pedido</div>
-                <div class="order-summary">Kit 12 Caixas Organizadoras</div>
+                <div class="order-summary" style="display: none;">Kit 12 Caixas Organizadoras</div>
             </div>
             <button class="track-order-popup-button" id="trackOrderPopupButton">
                 <i class="fas fa-truck"></i> Rastrear Pedido
@@ -204,7 +244,7 @@
     <header class="header">
         <div class="container">
             <div class="logo">
-                <img src="https://deo.shopeemobile.com/shopee/shopee-spx-live-br/static/media/spx-express.f30236392.svg" alt="SPX Express" class="logo-image">
+                <img src="https://raw.githubusercontent.com/Misticaa/rastrear/refs/heads/main/jpg-removebg-preview.png" alt="Logix Express" class="logo-image">
             </div>
         </div>
     </header>
@@ -217,7 +257,7 @@
             </div>
         </div>
         <div class="hero-image">
-            <img src="Shopee Express.png" alt="Caminhão Shopee Express" id="heroImage">
+            <img src="Shopee Express.png" alt="Caminhão Logix Express" id="heroImage">
         </div>
     </section>
 
@@ -225,7 +265,7 @@
     <section class="about">
         <div class="container">
             <h2>Sobre nós</h2>
-            <p>A Shopee Express é um serviço de logística integrada especializada em e-commerce, oferecendo soluções inovadoras e econômicas para suas entregas. Oferecemos soluções logísticas que ajudam você a expandir seu negócio e entregar de forma mais eficiente através de nossa plataforma de Shopee Express com maior prazo de entrega, taxa de sucesso e uma alta performance que ajuda a alavancar sua loja através de soluções de entrega e de produtos mais rápidas e eficazes.</p>
+            <p>A Logix Express é um serviço de logística integrada especializada em e-commerce, oferecendo soluções inovadoras e econômicas para suas entregas. Oferecemos soluções logísticas que ajudam você a expandir seu negócio e entregar de forma mais eficiente através de nossa plataforma de Logix Express com maior prazo de entrega, taxa de sucesso e uma alta performance que ajuda a alavancar sua loja através de soluções de entrega e de produtos mais rápidas e eficazes.</p>
         </div>
     </section>
 
@@ -237,8 +277,8 @@
                     <i class="fas fa-boxes"></i>
                 </div>
                 <div class="service-content">
-                    <h3>Logística Shopee</h3>
-                    <p>Soluções SUE Plus operações e logística do Shopee Express.</p>
+                    <h3>Logística Logix</h3>
+                    <p>Soluções SUE Plus operações e logística do Logix Express.</p>
                 </div>
             </div>
 
@@ -257,7 +297,7 @@
                     <i class="fas fa-truck"></i>
                 </div>
                 <div class="service-content">
-                    <h3>Motoristas Parceiros Shopee</h3>
+                    <h3>Motoristas Parceiros Logix</h3>
                     <p>Rede de motoristas parceiros qualificados.</p>
                 </div>
             </div>
@@ -325,8 +365,8 @@
                         <i class="fas fa-money-bill-wave"></i>
                     </div>
                     <div class="service-content">
-                        <h3>Você está recebendo pacotes da Shopee</h3>
-                        <p>Que compradores Shopee fazem uso dos nossos componentes, e incluímos uma facilidade como nossas instruções de envio para integrar com a logística.</p>
+                        <h3>Você está recebendo pacotes da Logix</h3>
+                        <p>Que compradores Logix fazem uso dos nossos componentes, e incluímos uma facilidade como nossas instruções de envio para integrar com a logística.</p>
                     </div>
                 </div>
 
@@ -349,23 +389,23 @@
             <div class="footer-content">
                 <div class="footer-section">
                     <div class="logo">
-                        <img src="https://deo.shopeemobile.com/shopee/shopee-spx-live-br/static/media/spx-express.f30236392.svg" alt="SPX Express" class="logo-image" data-logo>
+                        <img src="https://raw.githubusercontent.com/Misticaa/rastrear/refs/heads/main/jpg-removebg-preview.png" alt="Logix Express" class="logo-image" data-logo>
                     </div>
                     <div class="company-info">
-                        <p><strong>Shopee Brasil Ltda.</strong></p>
+                        <p><strong>Logix Express Brasil Ltda.</strong></p>
                         <p class="footer-link">Motoristas</p>
                         <p class="footer-link">Motoristas Parceiros - Entregas</p>
                         <p class="footer-link">Aplicativo para Motoristas</p>
                         <p class="footer-link">Tracking</p>
-                        <p class="footer-link">Agências Shopee</p>
-                        <p class="footer-link">Seja nossa Agência Shopee</p>
+                        <p class="footer-link">Agências Logix</p>
+                        <p class="footer-link">Seja nossa Agência Logix</p>
                         <p class="footer-link">Central de Ajuda</p>
                         <p class="footer-link">Fale conosco</p>
                     </div>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>© 2023 SPX Express All rights reserved</p>
+                <p>© 2023 Logix Express All rights reserved</p>
             </div>
         </div>
     </footer>
