@@ -162,7 +162,8 @@ body {
 }
 
 .logo-image {
-    height: 80px;
+    height: calc(100% - 10px);
+    max-height: 120px;
     width: auto;
     display: block;
     filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.3));
